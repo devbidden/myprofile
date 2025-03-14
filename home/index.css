@@ -1,0 +1,110 @@
+body{
+    background-color: #202122;
+    background-image: linear-gradient(to bottom right,#202122,black);
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.nav-items{
+display: flex;
+justify-content: space-between;
+margin:auto;
+padding: 0 600px;
+
+}
+a{
+    text-decoration: none;
+ }
+.navbutton{
+ color:blueviolet; 
+ text-decoration: none !important; 
+}
+.navbutton:hover{
+cursor: pointer;
+color:white;
+}
+.dp img{
+    margin-top: 50px;
+    border-radius: 100%;   
+}
+.dp {
+    margin:auto;
+    place-items: center;
+    background-image: linear-gradient(to bottom right, blueviolet,black);
+    height:500px;
+    width:350px;
+    border-radius: 40px;
+    border:groove 2px white;
+}
+.xname{
+    color:rgb(246, 241, 250);
+    font-size: 20px;
+   font-weight: bold;
+}
+.name{
+    color:rgb(246, 241, 250);
+    font-size: 30px;
+   font-weight: bold;
+}
+.subname{
+    color:white;
+    font-size: 20px;
+}
+.subnamex{
+    color:white;
+    font-size: 10px;
+}
+.fa-brands{
+   font-size:35px;
+   color:blueviolet;
+   padding:10px;
+}
+.fa-brands:hover{
+    color:black;
+}
+
+@media (max-width: 768px) {
+    .nav-items {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .dp {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .name {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbutton {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .dp {
+        width: 85%;
+        margin: 1rem auto;
+    }
+
+    .fa-brands {
+        padding: 0.3rem;
+    }
+}
+
+/* Fluid typography */
+html {
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 110%;
+    }
+}
